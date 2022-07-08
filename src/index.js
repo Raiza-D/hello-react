@@ -29,6 +29,7 @@ const Application = () => {
 
   return (
     <main>
+      <input placeholder="Type your name"></input>
       <Button reset={reset}/>
       <h1>Hello {name}</h1>
     </main>
