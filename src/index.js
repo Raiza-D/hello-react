@@ -30,12 +30,12 @@ const Application = () => {
   return (
     <main>
       <input
-      placeholder="Type your name"
-      value={name}
-      onChange={(event) => setName(event.target.value)}
+        placeholder="Type your name"
+        value={name}
+        onChange={(event) => setName(event.target.value)}
       />
-      <Button reset={reset}/>
-      <h1>Hello {name}</h1>
+      <Button reset={reset} />
+      {name && <h1>Hello {name}</h1>}
     </main>
   );
 };
